@@ -1,0 +1,26 @@
+body{
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+.secondPage{
+    margin-top: 20rem;
+}
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+.V-H{
+ height: 50vh;
+ padding-top: 10%;
+}
+.intro {
+    background: rgb(224, 224, 224);
+}
+.h2{
+    position: absolute;
+    top: 50%;
+    right: 10vh;
+}
+.black{
+    color: black;
+}
