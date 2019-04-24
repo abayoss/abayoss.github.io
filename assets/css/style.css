@@ -3,15 +3,11 @@ body{
     overflow-y: scroll;
 }
 .secondPage{
-    margin-top: 20rem;
+    padding-top: 20%;
 }
 section{
     scroll-snap-align: start;
-    height: 100vh;
-}
-.V-H{
- height: 50vh;
- padding-top: 10%;
+    min-height: 100vh;
 }
 .intro {
     background: rgb(224, 224, 224);
@@ -20,6 +16,11 @@ section{
     position: absolute;
     top: 50%;
     right: 10vh;
+}
+h2::after{
+    height: 10px;
+    display: block;
+    color: red
 }
 .black{
     color: black;

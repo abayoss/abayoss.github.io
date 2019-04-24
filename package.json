@@ -17,6 +17,5 @@
   },
   "homepage": "https://github.com/abayoss/abayoss.github.io#readme",
   "dependencies": {
-    "lax.js": "^1.2.3"
   }
 }

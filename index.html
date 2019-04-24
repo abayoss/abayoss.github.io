@@ -13,21 +13,195 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/ScrolldownButton.css" />
     <title>Mr.Abayoss</title>
   </head>
   <body>
+    <!-- nav bar : Logo -     - about - Work - CTA contact me  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/SVG/ab_Logo_White.svg" width="30" height="30" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link mr-4 active" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-4 btn btn-info active" href="#contact"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- first section : introduction  -->
     <section>
-      <div class="container VH secondPage">
-        <div class="row slideRight">
-          <div class="col-md-7">
-            <h2>Oussma abaayous</h2>
-            <p>
-              I’m a moroccan fullstack developer. I dedicate my time to develop
-              products and create useful services, mostly built with Angular.
-            </p>
+      <div class="container">
+        <div class="VH secondPage">
+          <div class="row slideRight">
+            <div class="col-md-7">
+              <h2>Oussma abaayous</h2>
+              <p>
+                I’m a moroccan fullstack developer. I dedicate my time to
+                develop products and create useful services, mostly built with
+                Angular.
+              </p>
+            </div>
           </div>
-          <div class="list-group text-left slideRight col-md-4 ml-3">
-            <h3>Contact</h3>
+        </div>
+        <!-- begin Scroll Down Button -->
+        <button
+          type="button"
+          class="scroll_down slideUP"
+          id="scroll_down"
+        ></button>
+        <!-- end Scroll Down Button -->
+      </div>
+    </section>
+    <section class="intro pt-5" id="work">
+      <div class="container pt-4">
+        <h3 class="black slideRight">Work</h3>
+        <div class="card-deck pt-2">
+          <div class="card border-info slideRight">
+            <div class="card-header">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/277x180/?code"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Project 1</h4>
+              <p class="card-text">Project Description</p>
+            </div>
+            <div class="card-footer text-muted slideRight">
+              <a name="" id="" class="btn btn-info btn btn-sm btn-block active"
+                >GitHub Code</a
+              >
+              <a name="" id="" class="btn btn-info btn-sm btn-block "
+                >Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="card border-info slideRight">
+            <div class="card-header">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/277x180/?dev"
+                alt=""
+              />
+            </div>
+            <div class="card-body slideRight">
+              <h4 class="card-title">Project 2</h4>
+              <p class="card-text">Project Description</p>
+            </div>
+            <div class="card-footer text-muted slideRight">
+              <a name="" id="" class="btn btn-info btn btn-sm btn-block active"
+                >GitHub Code</a
+              >
+              <a name="" id="" class="btn btn-info btn-sm btn-block "
+                >Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="card border-info slideRight">
+            <div class="card-header">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/277x180/?coding"
+                alt=""
+              />
+            </div>
+            <div class="card-body slideRight">
+              <h4 class="card-title">Project 3</h4>
+              <p class="card-text">Project Description</p>
+            </div>
+            <div class="card-footer slideRight">
+              <a name="" id="" class="btn btn-info btn btn-sm btn-block active"
+                >GitHub Code</a
+              >
+              <a name="" id="" class="btn btn-info btn-sm btn-block"
+                >Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <Section id="contact" class="pt-5">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="slideRight col-md-8 mb-4 border-right">
+            <h3>Contact Me</h3>
+            <!-- Email Form and address -->
+            <div class="form-group">
+              <label for="">
+                <i class="fa fa-at" aria-hidden="true"></i>
+                Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                name="Email"
+                id="Email"
+                aria-describedby="Insert Email"
+                placeholder="ex: contact@john.doe"
+              />
+              <div class="form-group mt-2">
+                <label for="">
+                  <i class="fa fa-bullseye" aria-hidden="true"></i>
+                  Object</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="object"
+                  id="object"
+                  aria-describedby="helpId"
+                  placeholder="object goes here..."
+                />
+              </div>
+              <div class="form-group mt-2">
+                <label for="messageText">
+                  <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                  Message</label
+                >
+                <textarea
+                  class="form-control"
+                  name="messageText"
+                  id="messageText"
+                  rows="4"
+                  placeholder="Message goes here..."
+                ></textarea>
+              </div>
+              <button
+                type="button"
+                name=""
+                id=""
+                class="btn btn-info mt-2 btn-block"
+              >
+                Submit Message
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+            <!-- social Media  -->
+            <h3>Social Media</h3>
             <a
               href="https://www.instagram.com/mr_abayoss/"
               target="#"
@@ -53,13 +227,35 @@
               Github
             </a>
           </div>
+          <div class="col-md-4 mt-auto slideLeft">
+            <h4><i class="fa fa-map" aria-hidden="true"></i> Address</h4>
+            <p>
+              Morocco, Rabat
+            </p>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> Phone</h4>
+            <p>+ 212 6 24 71</p>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="intro V-H">
-      <h2 class="black slideRight">to be continued...</h2>
-    </section>
+    </Section>
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/Scroll.js"></script>
+    <script src="assets/js/AnimationOnSection.js"></script>
+    <script src="assets/js/ScrollButton.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
