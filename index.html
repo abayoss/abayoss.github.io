@@ -12,16 +12,33 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon_package_v0.16/favicon-16x16.png"
+    />
     <link rel="manifest" href="img/favicon_package_v0.16//site.webmanifest" />
-    <link rel="mask-icon" href="img/favicon_package_v0.16//safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="img/favicon_package_v0.16//safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#9f00a7" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/ScrolldownButton.css" />
-    <title>Mr.Abayoss</title>
+    <title>Mr.Abaayous</title>
   </head>
   <body>
     <!-- nav bar : Logo -     - about - Work - CTA contact me  -->
@@ -32,7 +49,7 @@
           <img src="img/SVG/ab_Logo_White.svg" width="30" height="30" alt="" />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler mr-4"
           type="button"
           data-toggle="collapse"
           data-target="#navbarColor02"
@@ -46,7 +63,7 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link mr-4 active" href="#work">Work</a>
+              <a class="nav-link float-right mr-4 active" href="#work">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mr-4 btn btn-info active" href="#contact"
@@ -75,7 +92,7 @@
         <!-- begin Scroll Down Button -->
         <button
           type="button"
-          class="scroll_down slideUP"
+          class="scroll_down slideUp"
           id="scroll_down"
         ></button>
         <!-- end Scroll Down Button -->
@@ -85,7 +102,7 @@
       <div class="container pt-4">
         <h3 class="black slideRight">Work</h3>
         <div class="card-deck pt-2">
-          <div class="card border-info slideRight">
+          <div class="card slideRight">
             <div class="card-header">
               <img
                 class="card-img-top"
@@ -106,7 +123,7 @@
               </a>
             </div>
           </div>
-          <div class="card border-info slideRight">
+          <div class="card slideRight">
             <div class="card-header">
               <img
                 class="card-img-top"
@@ -127,7 +144,7 @@
               </a>
             </div>
           </div>
-          <div class="card border-info slideRight">
+          <div class="card slideRight">
             <div class="card-header">
               <img
                 class="card-img-top"
@@ -148,6 +165,13 @@
               </a>
             </div>
           </div>
+          <!-- begin Scroll Down Button -->
+          <button
+            type="button"
+            class="scroll_down slideUP"
+            id="scroll_down"
+          ></button>
+          <!-- end Scroll Down Button -->
         </div>
       </div>
     </section>
@@ -157,58 +181,75 @@
           <div class="slideRight col-md-8 mb-4 border-right">
             <h3>Contact Me</h3>
             <!-- Email Form and address -->
-            <div class="form-group">
-              <label for="">
-                <i class="fa fa-at" aria-hidden="true"></i>
-                Email</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                name="Email"
-                id="Email"
-                aria-describedby="Insert Email"
-                placeholder="ex: contact@john.doe"
-              />
+            <form
+              action="https://formcarry.com/s/v0Z3vC5PTtY"
+              method="post"
+              accept-charset="UTF-8"
+            >
               <div class="form-group mt-2">
                 <label for="">
                   <i class="fa fa-bullseye" aria-hidden="true"></i>
-                  Object</label
+                  Name</label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  name="object"
-                  id="object"
+                  name="name"
+                  id="name"
                   aria-describedby="helpId"
-                  placeholder="object goes here..."
+                  placeholder="your name goes here..."
+                  required
                 />
               </div>
-              <div class="form-group mt-2">
-                <label for="messageText">
-                  <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                  Message</label
+              <div class="form-group">
+                <label for="">
+                  <i class="fa fa-at" aria-hidden="true"></i>
+                  Email</label
                 >
-                <textarea
+                <input
+                  type="email"
                   class="form-control"
-                  name="messageText"
-                  id="messageText"
-                  rows="4"
-                  placeholder="Message goes here..."
-                ></textarea>
+                  name="Email"
+                  id="Email"
+                  aria-describedby="Insert Email"
+                  placeholder="ex: contact@john.doe"
+                  required
+                />
+                <div class="form-group mt-2">
+                  <label for="messageText">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    rows="4"
+                    placeholder="Message goes here..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  name=""
+                  id=""
+                  class="btn btn-info mt-2 btn-block"
+                >
+                  Submit Message
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
               </div>
-              <button
-                type="button"
-                name=""
-                id=""
-                class="btn btn-info mt-2 btn-block"
-              >
-                Submit Message
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-              </button>
-            </div>
+            </form>
             <!-- social Media  -->
             <h3>Social Media</h3>
+            <a
+              href="https://www.github.com/abayoss"
+              target="#"
+              class="list-group-item list-group-item-action"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i>
+              Github
+            </a>
             <a
               href="https://www.instagram.com/mr_abayoss/"
               target="#"
@@ -225,14 +266,6 @@
               <i class="fa fa-facebook" aria-hidden="true"></i>
               Facebook
             </a>
-            <a
-              href="https://www.github.com/abayoss"
-              target="#"
-              class="list-group-item list-group-item-action"
-            >
-              <i class="fa fa-github" aria-hidden="true"></i>
-              Github
-            </a>
           </div>
           <div class="col-md-4 mt-auto slideLeft">
             <h4><i class="fa fa-map" aria-hidden="true"></i> Address</h4>
@@ -247,7 +280,7 @@
     </Section>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/AnimationOnSection.js"></script>
+    <script src="assets/js/AnimationOnScroll.js"></script>
     <script src="assets/js/ScrollButton.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

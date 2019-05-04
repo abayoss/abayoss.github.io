@@ -1,3 +1,5 @@
+@import './ScrolldownButton.css';
+
 body{
     scroll-snap-type: y proximity;
     overflow-y: scroll;
@@ -10,7 +12,7 @@ section{
     min-height: 100vh;
 }
 .intro {
-    background: rgb(224, 224, 224);
+    background: rgb(197, 197, 197);
 }
 .h2{
     position: absolute;

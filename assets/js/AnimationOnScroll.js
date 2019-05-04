@@ -2,9 +2,9 @@ const slideRight = {
     distance: '6%',
     origin: 'left',
     opacity: 0,
-    delay: 400,
+    delay: 600,
     // reset: true,
-    interval: 600
+    interval: 400
 };
 const slideLeft = {
     distance: '6%',
@@ -12,17 +12,17 @@ const slideLeft = {
     opacity: 0,
     delay: 800,
     // reset: true,
-    interval: 800
+    interval: 600
 };
-const slideUP = {
-    distance: '6%',
-    origin: 'down',
+const slideUp = {
+    distance: '100%',
+    origin: 'bottom',
     opacity: 0,
-    delay: 2000,
+    delay: 800,
     // reset: true,
     interval: 600
 };
 
 ScrollReveal().reveal('.slideRight', slideRight);
 ScrollReveal().reveal('.slideLeft', slideLeft);
-ScrollReveal().reveal('.slideUP', slideUP);
+ScrollReveal().reveal('.slideUp', slideUp);
