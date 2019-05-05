@@ -4,25 +4,19 @@ body{
     scroll-snap-type: y proximity;
     overflow-y: scroll;
 }
-.secondPage{
+.SP{
     padding-top: 20%;
+}
+.blackBack{
+    background: url('../../img/BlackBack.jpg');
+    background-size: cover
 }
 section{
     scroll-snap-align: start;
     min-height: 100vh;
 }
-.intro {
+.Grey {
     background: rgb(197, 197, 197);
-}
-.h2{
-    position: absolute;
-    top: 50%;
-    right: 10vh;
-}
-h2::after{
-    height: 10px;
-    display: block;
-    color: red
 }
 .black{
     color: black;
