@@ -1,0 +1,24 @@
+
+.tm-image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 65px rgba(0,0,0,0.12);
+}
+.tm-image-card {
+    box-shadow: 3px 5px 30px 0 rgba(0,0,0,0.15);
+    transition: all .3s cubic-bezier(.2, .5, .3, 1);
+}
+.uk-overlay-primary {
+    background: rgba(255,255,255,0.75);
+}
+.uk-button{
+    border-radius: 500px;
+    min-width: 140px;
+}
+.tm-button-default {
+    background-color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.041);
+    color: #555;
+}
+.tm-button-default:not(.uk-button-small) {
+    min-width: 140px;
+}

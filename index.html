@@ -31,6 +31,11 @@
     <meta name="msapplication-TileColor" content="#9f00a7" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- ui kit cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css"
+    />
     <!-- bootswatch / font awesome CDN -->
     <link
       rel="stylesheet"
@@ -48,8 +53,7 @@
   <body>
     <!-- nav bar : Logo -     - about - Work - CTA contact me  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand ml-4" href="#">
           <img src="img/SVG/ab_Logo_White.svg" width="30" height="30" alt="" />
         </a>
         <button
@@ -67,16 +71,20 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link float-right mr-4 active" href="#work">Work</a>
+              <!-- <a class="nav-link float-right mr-4 active" href="#work">Work</a> -->
+              <a
+                class="nav-link uk-button uk-button-text mr-4 active"
+                href="#work"
+                >Work</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link mr-4 btn btn-info active" href="#contact"
+              <a class=" mr-4 uk-button btn-warning" href="#contact"
                 >Contact Me</a
               >
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
     <!-- first section : introduction  -->
@@ -87,10 +95,10 @@
             <div class="col-md-8">
               <h2 class="slideRight">Oussma abaayous</h2>
               <h6 class="mt-3  slideUp">
-                I’m a Moroccan Fullstack Web Developer, based in Rabat.
+                A Moroccan Web Developer, based in Rabat.
               </h6>
               <h6 class=" slideUp">
-                I dedicate my time to develop products and create useful
+                He dedicates his time to develop products and create useful
                 services, mostly built with Angular and Express.
               </h6>
             </div>
@@ -108,77 +116,167 @@
 
     <!-- Work Section  -->
     <section class="Grey pt-5" id="work">
-      <div class="container pt-4">
+      <div class="container pt-5">
         <h3 class="black slideUp">Work</h3>
-        <div class="card-deck pt-2">
-          <div class="card border-light slideRight">
-            <div class="card-header">
-              <img
-                class="card-img-top"
-                src="https://source.unsplash.com/277x180/?code"
-                alt=""
-              />
-            </div>
-            <div class="card-body slideRight">
-              <h4 class="card-title">Project 1</h4>
-              <p class="card-text">Project Description</p>
-            </div>
-            <div class="card-footer text-muted slideRight">
-              <a name="" id="" href="" class="btn btn-info btn-block active"
-                ><i class="fa fa-github" aria-hidden="true"></i> GitHub Code</a
+        <div class="row">
+          <div class="col-md-4 mx-auto py-2">
+            <div>
+              <div
+                class="uk-inline tm-image-card uk-transition-toggle"
+                tabindex="0"
               >
-              <a name="" id="" class="btn btn-info btn-sm btn-block "
-                >Live Demo
-              </a>
+              <div>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="https://github.com/abayoss/C-Ado_Snippets/blob/master/Screenshot1.jpg?raw=true" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">ADO Résume</h3>
+                      <p>
+                          ADO Crud Application that interacts with an SQL Server Using Different approaches
+                          in order to manipulat diffrent tables
+                      </p>
+                    </div>
+                    <div class="uk-position-cover uk-overlay uk-overlay-primary uk-transition-fade"></div>
+                  </div>
+                </div>
+                <div
+                  class="uk-panel uk-position-center uk-text-center uk-transition-fade"
+                >
+                  <!-- <p>
+                    <a
+                      class="uk-button btn-warning"
+                      href="https://demo.yootheme.com/themes/joomla/2019/yoko"
+                      data-preview=""
+                      >Preview</a
+                    >
+                  </p> -->
+                  <p>
+                    <a
+                      class="uk-button tm-button-default"
+                      href="#"
+                      >Details</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      class="uk-button btn-warning"
+                      href="https://github.com/abayoss/C-Ado_Snippets"
+                      target="#"
+                      ><i class="fa fa-github"></i> Source</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card slideRight">
-            <div class="card-header">
-              <img
-                class="card-img-top"
-                src="https://source.unsplash.com/277x180/?dev"
-                alt=""
-              />
-            </div>
-            <div class="card-body slideRight">
-              <h4 class="card-title">Project 2</h4>
-              <p class="card-text">Project Description</p>
-            </div>
-            <div class="card-footer text-muted slideRight">
-              <a name="" id="" href="" class="btn btn-info  btn-block active"
-                ><i class="fa fa-github" aria-hidden="true"></i> GitHub Code</a
+          <div class="col-md-4 mx-auto py-2">
+            <div>
+              <div
+                class="uk-inline tm-image-card uk-transition-toggle"
+                tabindex="0"
               >
-              <a name="" id="" class="btn btn-info btn-sm btn-block "
-                >Live Demo
-              </a>
+              <div>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="https://github.com/abayoss/ISIC_School_Scheduler/blob/master/isic1.png?raw=true" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">ISIC Scheduler</h3>
+                      <p>
+                        ASP Web app that allows multiple parties to organize a better School Schedule 
+                        and help them keep track of every group class
+                      </p>
+                    </div>
+                    <div class="uk-position-cover uk-overlay uk-overlay-primary uk-transition-fade"></div>
+                  </div>
+                </div>
+                <div
+                  class="uk-panel uk-position-center uk-text-center uk-transition-fade"
+                >
+                  <!-- <p>
+                    <a
+                      class="uk-button btn-warning"
+                      href="https://demo.yootheme.com/themes/joomla/2019/yoko"
+                      data-preview=""
+                      >Preview</a
+                    >
+                  </p> -->
+                  <p>
+                    <a
+                      class="uk-button tm-button-default"
+                      href="#"
+                      >Details</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      class="uk-button btn-warning"
+                      target="#"
+                      href="https://github.com/abayoss/ISIC_School_Scheduler"
+                      ><i class="fa fa-github"></i> Source</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card slideRight">
-            <div class="card-header">
-              <img
-                class="card-img-top"
-                src="https://source.unsplash.com/277x180/?coding"
-                alt=""
-              />
-            </div>
-            <div class="card-body slideRight">
-              <h4 class="card-title">Project 3</h4>
-              <p class="card-text">Project Description</p>
-            </div>
-            <div class="card-footer slideRight">
-              <a name="" id="" href="" class="btn btn-info btn-block active"
-                ><i class="fa fa-github" aria-hidden="true"></i> GitHub Code</a
+          <div class="col-md-4 mx-auto py-2">
+            <div>
+              <div
+                class="uk-inline tm-image-card uk-transition-toggle"
+                tabindex="0"
               >
-              <a name="" id="" class="btn btn-info btn-sm btn-block"
-                >Live Demo
-              </a>
+              <div>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="https://user-images.githubusercontent.com/26075149/50047516-f2db0a80-00b6-11e9-94a2-d2a8d39e1111.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Symph</h3>
+                      <p>
+                        Php app to learn the symphony freamwork and it's structure,
+                        that interacts with a local mySql database
+                      </p>
+                    </div>
+                    <div class="uk-position-cover uk-overlay uk-overlay-primary uk-transition-fade"></div>
+                  </div>
+                </div>
+                <div
+                  class="uk-panel uk-position-center uk-text-center uk-transition-fade"
+                >
+                  <!-- <p>
+                    <a
+                      class="uk-button btn-warning"
+                      href="https://demo.yootheme.com/themes/joomla/2019/yoko"
+                      data-preview=""
+                      >Preview</a
+                    >
+                  </p> -->
+                  <p>
+                    <a
+                      class="uk-button tm-button-default"
+                      href="#"
+                      >Details</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      class="uk-button btn-warning"
+                      target="#"
+                      href="https://github.com/abayoss/SYMPH"
+                      ><i class="fa fa-github"></i> Source</a
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Form and info Section -->
+    <!-- Contact Form and warning Section -->
     <Section id="contact" class="pt-5">
       <div class="container pt-5">
         <div class="row">
@@ -196,8 +294,8 @@
                   Name</label
                 >
                 <input
+                  class="uk-input"
                   type="text"
-                  class="form-control"
                   name="name"
                   id="name"
                   aria-describedby="helpId"
@@ -211,12 +309,12 @@
                   Email</label
                 >
                 <input
-                  type="email"
-                  class="form-control"
-                  name="Email"
-                  id="Email"
-                  aria-describedby="Insert Email"
-                  placeholder="ex: contact@john.doe"
+                  class="uk-input"
+                  type="text"
+                  name="email"
+                  id="email"
+                  aria-describedby="helpId"
+                  placeholder="your email goes here..."
                   required
                 />
                 <div class="form-group mt-2">
@@ -225,7 +323,7 @@
                     Message</label
                   >
                   <textarea
-                    class="form-control"
+                    class="uk-textarea"
                     name="message"
                     id="message"
                     rows="4"
@@ -237,7 +335,7 @@
                   type="submit"
                   name=""
                   id=""
-                  class="btn btn-info mt-2 btn-block"
+                  class="uk-button btn-warning mt-2 btn-block"
                 >
                   Send
                   <i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -271,20 +369,20 @@
               instagram
             </a>
           </div>
-          <!-- personal info  -->
-          <div class="col-md-4 slideLeft mt-auto pb-2">
-            <h4><i class="fa fa-at"> Email</i></h4>
+          <!-- personal warning  -->
+          <div class="col-md-4 slideLeft mt-auto pb-2 mb-3">
+            <h4><i class="fa fa-at" aria-hidden="true"></i> Email</h4>
             <p>Abaayous.oussama@gmail.com</p>
             <h4><i class="fa fa-map" aria-hidden="true"></i> Address</h4>
             <p>
               Morocco, Rabat
             </p>
             <a
-            class="btn btn-outline-info  mb-3 btn-block"
-            href="https://drive.google.com/file/d/1CL38WecPF1AYKICHFoIdnA-UPRjso_BZ/view"
-            target="#"
+              class="uk-button px-0"
+              href="https://drive.google.com/file/d/1CL38WecPF1AYKICHFoIdnA-UPRjso_BZ/view"
+              target="#"
             >
-            <i class="fa fa-file-pdf-o"></i>
+              <i class="fa fa-file-pdf-o"></i>
               Curriculum Vitae
             </a>
             <!-- <h4><i class="fa fa-phone" aria-hidden="true"></i> Phone</h4>

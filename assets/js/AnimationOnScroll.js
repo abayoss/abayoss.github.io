@@ -1,8 +1,9 @@
 const slideRight = {
   origin: "left",
-  delay: 600,
+  delay: 800,
+  duration:200,
   // reset: true,
-  interval: 100
+  interval: 400
 };
 const slideLeft = {
   origin: "right",
@@ -18,6 +19,9 @@ const slideUp = {
   interval: 600
 };
 ScrollReveal({ mobile: false, opacity: 0, distance: "6%" });
-ScrollReveal().reveal(".slideRight", slideRight);
+ScrollReveal().reveal(".slideRight ,.Grey, .uk-inline", slideRight);
 ScrollReveal().reveal(".slideLeft", slideLeft);
 ScrollReveal().reveal(".slideUp", slideUp);
+ScrollReveal().reveal(".blackBack", {
+  scale: 1.1
+});

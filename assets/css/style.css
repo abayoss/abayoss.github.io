@@ -1,22 +1,27 @@
 @import './ScrolldownButton.css';
+@import './uk.css';
 
 body{
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+    overflow-x: hidden;
 }
 .SP{
     padding-top: 20%;
 }
 .blackBack{
     background: url('../../img/BlackBack.jpg');
-    background-size: cover
+    background-size: cover;
+    overflow-x: hidden;
 }
 section{
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     min-height: 100vh;
+    /* css smouth scroll */
+    scroll-behavior: smooth;
 }
 .Grey {
-    background: rgb(197, 197, 197);
+    background: #F8F8F8;
 }
 .black{
     color: black;
