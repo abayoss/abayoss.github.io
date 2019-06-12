@@ -3,10 +3,9 @@
 # Edit at https://www.gitignore.io/?templates=node
 
 # Files 
-html/
-assets/fonts
 old-index.html
-Salat/
+package.json
+package-lock.json
 ### Node ###
 # Logs
 logs

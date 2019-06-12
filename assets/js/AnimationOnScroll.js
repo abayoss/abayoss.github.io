@@ -22,6 +22,3 @@ ScrollReveal({ mobile: false, opacity: 0, distance: "6%" });
 ScrollReveal().reveal(".slideRight ,.Grey, .uk-inline", slideRight);
 ScrollReveal().reveal(".slideLeft", slideLeft);
 ScrollReveal().reveal(".slideUp", slideUp);
-ScrollReveal().reveal(".blackBack", {
-  scale: 1.1
-});

@@ -26,3 +26,7 @@ section{
 .black{
     color: black;
 }
+
+.noBorderRadius {
+    border-radius: 0px !important;
+}
