@@ -5,11 +5,11 @@
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    right: 46px;
     height: 50px;
     width: 30px;
-    bottom: 60px;
+    bottom: 54%;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 20px;

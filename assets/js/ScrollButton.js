@@ -7,7 +7,7 @@
     const btnScrollDown = document.querySelector('#scroll_down');
   
     function scrollDown() {
-      const windowCoords = document.documentElement.clientHeight;
+      const windowCoords = document.documentElement.clientHeight / 2;
       (function scroll() {
         if (window.pageYOffset < windowCoords) {
           window.scrollBy(0, 10);

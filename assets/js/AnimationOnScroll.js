@@ -7,16 +7,16 @@ const slideRight = {
 };
 const slideLeft = {
   origin: "right",
-  // delay: 600,
+  // delay: 900,
   // reset: true,
-  interval: 600
+  interval: 800
 };
 const slideUp = {
   distance: "100%",
   origin: "bottom",
-  // delay: 600,
+  delay: 800,
   // reset: true,
-  interval: 600
+  interval: 800
 };
 ScrollReveal({ mobile: false, opacity: 0, distance: "6%" });
 ScrollReveal().reveal(".slideRight ,.Grey, .uk-inline", slideRight);

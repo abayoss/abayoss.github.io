@@ -3,7 +3,9 @@
 # Edit at https://www.gitignore.io/?templates=node
 
 # Files 
-old-index.html
+v3
+v2
+v1
 package.json
 package-lock.json
 ### Node ###
