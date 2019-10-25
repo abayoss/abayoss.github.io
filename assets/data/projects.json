@@ -18,7 +18,7 @@
     {
       "image": "https://i.imgur.com/4YiTYda.png",
       "title": "MeanFun",
-      "description": "Mean Stack app that shows you how to do basic interaction, and authentication, using the Http Client.",
+      "description": "MongoDb Express Angular Node Stack app that shows you how to do basic interaction, and authentication, using the Http Client.",
       "live": "https://meanfun-e1013.web.app/",
       "details": "https://github.com/abayoss/meanFun/blob/master/README.md",
       "source": "https://github.com/abayoss/meanfun"
