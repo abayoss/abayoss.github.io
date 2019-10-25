@@ -1,7 +1,14 @@
-  /* -------------------------------------------------------------------------
+/* -------------------------------------------------------------------------
      begin Scroll Down Button
    * ------------------------------------------------------------------------- */
+button.scroll_down {
+  visibility: hidden;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
   button.scroll_down {
+    visibility: visible;
+    display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -30,43 +37,43 @@
     animation: scroll_down_btn-animation 2s infinite;
     box-sizing: border-box;
   }
-  
-  @keyframes scroll_down_btn-animation {
-    0% {
-      transform: translate(0, 0);
-      opacity: 0;
-    }
-    40% {
-      opacity: 1;
-    }
-    80% {
-      transform: translate(0, 20px);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
+}
+@keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
   }
-  
-  @-webkit-keyframes scroll_down_btn-animation {
-    0% {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-      opacity: 0;
-    }
-    40% {
-      opacity: 1;
-    }
-    80% {
-      -webkit-transform: translate(0, 20px);
-      transform: translate(0, 20px);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
+  40% {
+    opacity: 1;
   }
-  
-  /* -------------------------------------------------------------------------
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------
      end Scroll Down Button 
    * ------------------------------------------------------------------------- */
