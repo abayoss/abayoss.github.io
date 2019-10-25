@@ -30,7 +30,7 @@ section{
     scroll-behavior: smooth;
 }
 .halfSection{
-    max-height: 50vh;
+    /* height: 50vh; */
     min-height: 50vh;
 }
 .Grey {
