@@ -29,6 +29,20 @@
       "description": "symfony e-commerce web site with some cool functionalities, like : image upload and Rating System",
       "details": "https://github.com/abayoss/symFun/blob/master/README.md",
       "source": "https://github.com/abayoss/symFun"
+    },
+    {
+      "image": "https://i.imgur.com/awasmha.png",
+      "title": "Angular fundamentals",
+      "description": "the fundamentals of using the Angular framework, syntax, http client and more interesting concepts",
+      "details": "https://github.com/abayoss/angularFun/blob/master/README.md",
+      "source": "https://github.com/abayoss/angularFun"
+    },
+    {
+      "image": "https://i.imgur.com/t6P2l8T.png",
+      "title": "Angular Fire",
+      "description": "Angular and fire Store APP with some cool functionalities, like : image upload User authentication",
+      "details": "https://github.com/abayoss/ngFire/blob/master/README.md",
+      "source": "https://github.com/abayoss/ngFire"
     }
   ]
 }
