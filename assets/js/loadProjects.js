@@ -1,29 +1,28 @@
-// Work projects section
-const topWorkGrid = document.querySelector('.top_work_grid');
-const workGrid = document.querySelector('.work_grid');
-if (workGrid || topWorkGrid) {
-  fetch('assets/data/projects.json')
-    .then(res => {
-      return res.json();
-    })
-    .then(responseData => {
-      if (topWorkGrid) {
-        displayTopProjects(responseData.projects, topWorkGrid);
-      } else {
-        displayProjects(responseData.projects, workGrid);
-      }
-    });
-}
-const displayTopProjects = projects => {
-  let topProjects = [];
-  for (let index = 0; index < 3; index++) {
-    topProjects.push(projects[index]);
-  }
-  displayProjects(topProjects, topWorkGrid);
-};
-const displayProjects = (projects, grid) => {
-  projects.forEach(element => {
-    grid.innerHTML += `
+const loadProjects = async () => {
+    // Work projects place holders
+    const topWorkGrid = document.querySelector('.top_work_grid');
+    const workGrid = document.querySelector('.work_grid');
+    if (workGrid || topWorkGrid) {
+        fetch('assets/data/projects.json')
+            .then(res => res.json())
+            .then( responseData => {
+                if (topWorkGrid) {
+                    displayTopProjects(responseData.projects, topWorkGrid);
+                  } else {
+                    displayProjects(responseData.projects, workGrid);
+                  }
+            });
+    }
+    const displayTopProjects =  projects => {
+        let topProjects = [];
+        for (let index = 0; index < 6; index++) {
+            topProjects.push(projects[index]);
+        }
+        displayProjects(topProjects, topWorkGrid);
+    };
+    const displayProjects = async (projects, grid) => {
+        await projects.forEach(element => {
+            grid.innerHTML += `
                 <div class="col-md-4 mx-auto py-2">
                   <div>
                     <div
@@ -64,7 +63,7 @@ const displayProjects = (projects, grid) => {
                         </p>
                         <p>
                           <a
-                            class="uk-button btn-warning"
+                            class="uk-button uk-button-default-warning"
                             href="${element.source}"
                             target="#"
                             ><i class="fa fa-github"></i> Source</a
@@ -75,5 +74,9 @@ const displayProjects = (projects, grid) => {
                   </div>
                 </div>
           `;
-  });
+        });
+        setTimeout(() => {
+          return 1;
+        }, 3000);
+    };
 };

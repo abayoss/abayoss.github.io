@@ -10,10 +10,6 @@
 .uk-overlay-primary {
     background: rgba(255,255,255,0.75);
 }
-.uk-button{
-    border-radius: 500px;
-    min-width: 140px;
-}
 .tm-button-default {
     background-color: #fff;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.041);
@@ -21,4 +17,20 @@
 }
 .tm-button-default:not(.uk-button-small) {
     min-width: 140px;
+}
+.uk-button{
+    border-radius: 500px;
+    min-width: 140px;
+}
+.uk-list, li {
+    color: orange;
+}
+.uk-button-default-warning {
+    background-color: black;
+    color: white;
+    border: 2px solid #FF8800;
+}
+.uk-button-default-warning:hover {
+    color: white;
+    background-color: #FF8800;
 }

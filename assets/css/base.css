@@ -1,0 +1,16 @@
+body {
+    /* scroll-snap-type: y mandatory; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* font-family: alata; */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5, 
+p {
+    font-family: alata;
+}

@@ -1,0 +1,37 @@
+section{
+    scroll-snap-align: center;
+    min-height: 100vh;
+    /* css smouth scroll */
+    scroll-behavior: smooth;
+}
+section#intro {
+    min-height: 70vh;
+}
+
+section#skills {
+    min-height: 50vh;
+}
+.halfSection{
+    min-height: 50vh;
+}
+.bg-black-img{
+    background: url('../../assets/img/BlackBack.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+}
+.bg-grey {
+    background: #F8F8F8;
+}
+.bg-white {
+    background: rgb(255, 255, 255);
+}
+.text-black{
+    color: black;
+}
+.text-white{
+    color: white;
+}
+.animated {
+    /* gets overrided by the scroll reveal */
+    visibility: hidden;
+}
