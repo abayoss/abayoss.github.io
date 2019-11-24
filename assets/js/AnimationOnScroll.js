@@ -30,5 +30,5 @@ const animateOnscroll = () => {
   ScrollReveal().reveal(".slideRight2", slideRight2);
   ScrollReveal().reveal(".slideLeft1", slideLeft1);
   ScrollReveal().reveal(".slideLeft2", slideLeft2);
-  ScrollReveal().reveal(".slideUp", slideUp);
+  ScrollReveal().reveal(".slideUp", slideUp);  
 }

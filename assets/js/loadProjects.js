@@ -1,27 +1,28 @@
 const loadProjects = async () => {
-    // Work projects place holders
-    const topWorkGrid = document.querySelector('.top_work_grid');
-    const workGrid = document.querySelector('.work_grid');
+    // Work projects Grid place holders : 
+    let topWorkGrid = document.querySelector('.top_work_grid');
+    let workGrid = document.querySelector('.work_grid');
+    // load data 
     if (workGrid || topWorkGrid) {
-        fetch('assets/data/projects.json')
+        fetch('assets/data/projects.json?'+ Math.random())
             .then(res => res.json())
-            .then( responseData => {
+            .then(responseData => {
                 if (topWorkGrid) {
-                    displayTopProjects(responseData.projects, topWorkGrid);
-                  } else {
+                    displayTopProjects(responseData.projects);
+                } else {
                     displayProjects(responseData.projects, workGrid);
-                  }
+                }
             });
     }
-    const displayTopProjects =  projects => {
+    const displayTopProjects = projects => {
         let topProjects = [];
         for (let index = 0; index < 6; index++) {
             topProjects.push(projects[index]);
         }
         displayProjects(topProjects, topWorkGrid);
     };
-    const displayProjects = async (projects, grid) => {
-        await projects.forEach(element => {
+    const displayProjects = (projects, grid) => {
+        projects.forEach(element => {
             grid.innerHTML += `
                 <div class="col-md-4 mx-auto py-2">
                   <div>
@@ -75,8 +76,6 @@ const loadProjects = async () => {
                 </div>
           `;
         });
-        setTimeout(() => {
-          return 1;
-        }, 3000);
+        return 1;
     };
 };
