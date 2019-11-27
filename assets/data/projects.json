@@ -3,7 +3,7 @@
     {
       "image": "https://i.imgur.com/ZIi65is.png",
       "title": "Dreamer",
-      "description": "An blog to Write and share amazing stories and ideas you have been dreaming about, You can write about anything you want!",
+      "description": "A cool medium style blog to Write and share amazing stories and ideas you have been dreaming about!",
       "live": "https://dream-vote.herokuapp.com/dreams",
       "details": "https://github.com/abayoss/express-mongoose/blob/resume-reddit-voting/readme.md",
       "source": "https://github.com/abayoss/express-mongoose/tree/resume-reddit-voting"
