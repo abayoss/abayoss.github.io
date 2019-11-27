@@ -3,22 +3,22 @@
     {
       "image": "https://i.imgur.com/ZIi65is.png",
       "title": "Dreamer",
-      "description": "An application to Write and share amazing stories and ideas, You can write about anything you want!",
+      "description": "An blog to Write and share amazing stories and ideas you have been dreaming about, You can write about anything you want!",
       "live": "https://dream-vote.herokuapp.com/dreams",
       "details": "https://github.com/abayoss/express-mongoose/blob/resume-reddit-voting/readme.md",
       "source": "https://github.com/abayoss/express-mongoose/tree/resume-reddit-voting"
     },
     {
       "image": "https://i.imgur.com/Tm4MI47.jpg",
-      "title": "ISIC Schedular",
+      "title": "ISIC School Schedular",
       "description": "ASP Web app that allows multiple parties to organize a better School Schedule and help them keep track of every class group",
       "details": "https://github.com/abayoss/ISIC_School_Scheduler/blob/master/readme.md",
       "source": "https://github.com/abayoss/ISIC_School_Scheduler"
     },
     {
       "image": "https://i.imgur.com/4YiTYda.png",
-      "title": "MeanFun",
-      "description": "MEAN Stack app that shows you how to do basic interaction, and authentication, using the Http Client.",
+      "title": "MeanFun KTM showcase",
+      "description": "MEAN Stack app that shows you how to do client server interaction, and authentication, using the Http Client.",
       "live": "https://meanfun-e1013.web.app/",
       "details": "https://github.com/abayoss/meanFun/blob/master/README.md",
       "source": "https://github.com/abayoss/meanfun"
@@ -26,7 +26,7 @@
     {
       "image": "https://i.imgur.com/g8HtDv2.png",
       "title": "SymFun",
-      "description": "symfony e-commerce web site with some cool functionalities, like : image upload and Rating System",
+      "description": "symfony e-commerce web site with some cool functionalities, like: image upload, shopping cart 🛒 and Rating System ⭐",
       "details": "https://github.com/abayoss/symFun/blob/master/README.md",
       "source": "https://github.com/abayoss/symFun"
     },
@@ -40,7 +40,7 @@
     {
       "image": "https://i.imgur.com/t6P2l8T.png",
       "title": "Angular Fire",
-      "description": "Angular and fire Store APP with some cool functionalities, like : image upload User authentication",
+      "description": "Angular and fire Store APP with some cool functionalities, like: real time update, image upload and User authentication",
       "details": "https://github.com/abayoss/ngFire/blob/master/README.md",
       "source": "https://github.com/abayoss/ngFire"
     }
