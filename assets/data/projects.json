@@ -17,7 +17,7 @@
     },
     {
       "image": "https://i.imgur.com/4YiTYda.png",
-      "title": "MeanFun KTM showcase",
+      "title": "KTM showcase",
       "description": "MEAN Stack app that shows you how to do client server interaction, and authentication, using the Http Client.",
       "live": "https://meanfun-e1013.web.app/",
       "details": "https://github.com/abayoss/meanFun/blob/master/README.md",
@@ -25,7 +25,7 @@
     },
     {
       "image": "https://i.imgur.com/g8HtDv2.png",
-      "title": "SymFun",
+      "title": "SymFun Store",
       "description": "symfony e-commerce web site with some cool functionalities, like: image upload, shopping cart 🛒 and Rating System ⭐",
       "details": "https://github.com/abayoss/symFun/blob/master/README.md",
       "source": "https://github.com/abayoss/symFun"
@@ -33,7 +33,7 @@
     {
       "image": "https://i.imgur.com/awasmha.png",
       "title": "Angular fundamentals",
-      "description": "the fundamentals of using the Angular framework, syntax, http client and more interesting concepts",
+      "description": "the fundamentals of using the Angular 2++ framework: syntax, form validation, http client and more interesting concepts",
       "details": "https://github.com/abayoss/angularFun/blob/master/README.md",
       "source": "https://github.com/abayoss/angularFun"
     },
