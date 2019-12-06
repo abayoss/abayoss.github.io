@@ -31,6 +31,9 @@ section#skills {
 .text-white{
     color: white;
 }
+.negative-color{
+    color:black;
+}
 .animated {
     /* gets overrided by the scroll reveal */
     visibility: hidden;

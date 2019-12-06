@@ -13,3 +13,11 @@
         visibility: visible !important;
     }
 }
+@media only screen and ( min-height: 700px) {
+    .negative-margin {
+        margin-top: -200px;
+    }
+    .negative-color {
+        color: white;
+    }
+}
