@@ -31,11 +31,11 @@
       "source": "https://github.com/abayoss/symFun"
     },
     {
-      "image": "https://i.imgur.com/awasmha.png",
-      "title": "Angular fundamentals",
-      "description": "the fundamentals of using the Angular 2++ framework: syntax, form validation, http client and more interesting concepts",
-      "details": "https://github.com/abayoss/angularFun/blob/master/README.md",
-      "source": "https://github.com/abayoss/angularFun"
+      "image": "https://imgur.com/PpMcTcG",
+      "title": "Black Mambas",
+      "description": "Founded in 2015, the Black Mambas is an american football team from Rabat Morocco, with both a male & female section.",
+      "details": "https://github.com/abayoss/black-mambas-american-football/blob/master/README.md",
+      "source": "https://abayoss.github.io/black-mambas-american-football/"
     },
     {
       "image": "https://i.imgur.com/t6P2l8T.png",
@@ -43,6 +43,13 @@
       "description": "Angular and fire Store APP with some cool functionalities, like: real time update, image upload and User authentication",
       "details": "https://github.com/abayoss/ngFire/blob/master/README.md",
       "source": "https://github.com/abayoss/ngFire"
+    },
+        {
+      "image": "https://i.imgur.com/awasmha.png",
+      "title": "Angular fundamentals",
+      "description": "the fundamentals of using the Angular 2++ framework: syntax, form validation, http client and more interesting concepts",
+      "details": "https://github.com/abayoss/angularFun/blob/master/README.md",
+      "source": "https://github.com/abayoss/angularFun"
     }
   ]
 }
