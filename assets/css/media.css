@@ -13,7 +13,7 @@
         visibility: visible !important;
     }
 }
-@media only screen and ( min-height: 700px) {
+@media only screen and ( min-height: 800px) {
     .negative-margin {
         margin-top: -200px;
     }
