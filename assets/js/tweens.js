@@ -1,12 +1,23 @@
-const tl = gsap.timeline({
+// const tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.bg-black-img',
+//         start: 'bottom 90%',
+//         end: 'bottom top',
+//         scrub: true,
+//         // markers: true,
+//     },
+// });
+// tl.to('.bg-black-img', { scale: 1.2, y: 100 })
+
+const tl2 = gsap.timeline({
     scrollTrigger: {
-        trigger: '#work',
-        start: 'top 94%',
-        end: 'bottom top',
+        trigger: '#section-paralax',
+        start: 'top bottom',
+        end: 'bottom 20%',
         scrub: true,
-        // markers: true,
+        markers: true,
     },
 });
-tl.to('.bg-black-img', { scale: 1.5 , y: 500});
-// tl.to('.box', { rotation: 360, duration: 3 });
-// tl.to('.box', { xPercent: 350, duration: 1 });
+tl2.to('#img-paralax', {y: 100 })
+
+SmoothScroll({ animationTime : 900, stepSize: 60 })

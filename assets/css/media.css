@@ -15,7 +15,7 @@
 }
 @media only screen and ( min-height: 800px) {
     .negative-margin {
-        margin-top: -200px;
+        margin-top: -300px;
     }
     .negative-color {
         color: white;
