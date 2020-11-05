@@ -19,7 +19,7 @@ section#intro > .bg-black-img{
 section#intro > .overlay {
     left: 0;
     bottom: 0;
-    background: linear-gradient(rgba(16,16,16,0) 0%, #101010d7 60%, #101010 100%);
+    background: linear-gradient(rgba(16,16,16,0) 0%, #101010e0 70%, #101010 100%);
 }
 section#work {
     min-height: 50vh;

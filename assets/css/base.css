@@ -8,3 +8,10 @@ p {
     font-family: alata;
     position: relative;
 }
+
+* {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    outline: 0;
+    transform-origin: 0 0;
+}

@@ -26,7 +26,8 @@
     <!-- layout/navbar end -->
 
     <!-- pages/main start -->
-    <main>
+    <main id="main-container">
+
         <!-- first section : introduction  -->
         <section id="intro">
             <div class="bg-black-img"></div>
@@ -56,20 +57,7 @@
                 <div class="row top_work_grid mb-5 animated slideLeft2"></div>
             </div>
         </section>
-
-        <section id="section-paralax">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="overflow: hidden;">
-                            <img id="img-paralax"
-                                style="transform: scale(1.2);width: 100%; object-fit: cover; transform-origin: 50% 50%; height: 100%;"
-                                src="https://viragesmoto.com/wp-content/uploads/ViragesMoto72sur111-1000x1500.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- skill Section  -->
         <section class="animated slideRight1 bg-grey halfSection py-5" id="skill">
@@ -103,6 +91,25 @@
                 </div>
             </div>
         </section>
+
+        <section id="section-paralax" class="pt-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6" id="img-paralax-col">
+                        <div style="overflow: hidden;">
+                            <img id="img-paralax"
+                                style="transform: scale(1.3);width: 300px; object-fit: cover; transform-origin: 50% 50%; height: 100%;"
+                                src="https://viragesmoto.com/wp-content/uploads/ViragesMoto72sur111-1000x1500.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Une expérience inoubliable </h4>
+                        <p>Des itinéraires testés et approuvés par nos soins à travers les plus belles routes de France et d’Espagne, le meilleur de la gastronomie locale, une ambiance amicale et une attention particulière à toutes vos demandes. Let’s ride! </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- pages/main end -->
 
@@ -117,8 +124,9 @@
 
     <script src="assets/js/loadProjects.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <!-- <script src="assets/libs/smoothScroll/smoothscroll.js"></script> -->
     <script src="assets/js/AnimationOnScroll.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- <script src="assets/js/ScrollButton.js"></script> -->
