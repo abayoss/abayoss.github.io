@@ -5,7 +5,7 @@ function loadGsapTweens() {
             start: 'top top',
             end: 'bottom top',
             scrub: true,
-            markers: true,
+            // markers: true,
             id: 'black_img',
         },
     });
