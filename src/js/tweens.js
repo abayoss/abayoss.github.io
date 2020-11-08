@@ -9,7 +9,7 @@ function loadGsapTweens() {
             id: 'black_img',
         },
     });
-    tl.to('.bg-black-img', { scale: 1.1, y: 100});
+    tl.to('.bg-black-img', { scale: 1.1, y: 100, transformOrigin: '50% 50%'});
 
     // const tl2 = gsap.timeline({
     //     scrollTrigger: {
