@@ -14,10 +14,18 @@
     <meta name="msapplication-TileColor" content="#9f00a7" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- links start -->
-    <div w3-include-html="partials/headLinks.html"></div>
-    <!-- links end -->
     <title>Mr.abayoss</title>
+
+    <!-- links start -->
+    <!-- ui kit cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+    <!-- bootswatch / font awesome CDN -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <!-- Main css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <!-- links end -->
 </head>
 
 <body class="reveal" style="visibility: hidden;">
@@ -46,18 +54,58 @@
                         </h6>
                     </div>
                 </div>
+                <!-- begin Scroll Down Button -->
+                <button type="button" class="animated scroll_down slideUp" id="scroll_down"></button>
+                <!-- end Scroll Down Button -->
             </div>
         </section>
 
         <!-- Work Section  -->
-        <section class="bg-grey pb-5" id="work">
+        <section class="pb-5" id="work">
             <div class="container negative-margin">
                 <h4>Work</h4>
                 <!-- dynamic Work Section  -->
-                <div class="row top_work_grid mb-5 animated slideLeft2"></div>
+                <div class="row top_work_grid mb-5 animated slideLeft2">
+                    <div class="col-md-4 mx-auto py-2 " v-for="element in ProjectsList">
+                        <div>
+                            <div class="uk-inline tm-image-card uk-transition-toggle" tabindex="0">
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img :src="element.image" alt="" />
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title">{{element.title}}</h3>
+                                            <p>
+                                                {{element.description}}
+                                            </p>
+                                        </div>
+                                        <div class="uk-position-cover uk-overlay uk-overlay-primary uk-transition-fade">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-panel uk-position-center uk-text-center uk-transition-fade">
+                                    <p v-if="element.live">
+                                        <a class="uk-button btn-info" :href="element.live" target="#">Live Demo
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a class="uk-button btn-secondary" :href="element.details" target="#">Details
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a class="uk-button uk-button-default-info" :href="element.source"
+                                            target="#"><i class="fa fa-github"></i> Source
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
 
         <!-- skill Section  -->
         <section class="animated slideRight1 bg-grey halfSection py-5" id="skill">
@@ -67,10 +115,11 @@
                         <h4 class="text-black">Tech i'm working with</h4>
                         <ul class="uk-list uk-list-divider">
                             <li></li>
-                            <li>Angular 2 ++</li>
+                            <li>Vue Js</li>
                             <li>Node & Express JS</li>
-                            <li>Reactive Extensions</li>
-                            <li>PHP : Symfony & Codeigniter</li>
+                            <li>Laravel | Codeigniter</li>
+                            <li>Angular 2 ++</li>
+                            <li>Bootstrap Css</li>
                             <li></li>
                         </ul>
                     </div>
@@ -78,9 +127,10 @@
                         <h4 class="text-black">Tech i'm familiar with</h4>
                         <ul class="uk-list uk-list-divider">
                             <li></li>
-                            <li>Bootstrap, Sass, Less</li>
+                            <li>Sass, Less</li>
+                            <li>Reactive Extensions</li>
                             <li>Wordpress, Drupal</li>
-                            <li>PHP : laravel</li>
+                            <li>Symfony</li>
                             <li>C# Asp .net</li>
                             <li></li>
                         </ul>
@@ -92,23 +142,25 @@
             </div>
         </section>
 
-        <section id="section-paralax" class="pt-5">
+        <!-- <section id="section-paralax" class="pt-5">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6" id="img-paralax-col">
-                        <div style="overflow: hidden;">
-                            <img id="img-paralax"
+                    <div class="col-md-6">
+                        <div style="overflow: hidden;" class="img-paralax-col">
+                            <img class="img-paralax"
                                 style="transform: scale(1.3);width: 300px; object-fit: cover; transform-origin: 50% 50%; height: 100%;"
                                 src="https://viragesmoto.com/wp-content/uploads/ViragesMoto72sur111-1000x1500.jpg">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <h4>Une expérience inoubliable </h4>
-                        <p>Des itinéraires testés et approuvés par nos soins à travers les plus belles routes de France et d’Espagne, le meilleur de la gastronomie locale, une ambiance amicale et une attention particulière à toutes vos demandes. Let’s ride! </p>
+                        <p>Des itinéraires testés et approuvés par nos soins à travers les plus belles routes de France
+                            et d’Espagne, le meilleur de la gastronomie locale, une ambiance amicale et une attention
+                            particulière à toutes vos demandes. Let’s ride! </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
     <!-- pages/main end -->
@@ -117,24 +169,16 @@
     <div w3-include-html="layout/footer.html"></div>
     <!-- layout/footer start  -->
 
-    <script src="assets/js/w3htmlInclude.js"></script>
-    <script>
-        includeHTML();
-    </script>
-
-    <script src="assets/js/loadProjects.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
-    <!-- <script src="assets/libs/smoothScroll/smoothscroll.js"></script> -->
-    <script src="assets/js/AnimationOnScroll.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!-- <script src="assets/js/ScrollButton.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/tweens.js"></script>
+
+    <script src="docs/app.js"></script>
 </body>
 
 </html>

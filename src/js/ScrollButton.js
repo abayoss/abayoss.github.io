@@ -1,13 +1,14 @@
 /* -------------------------------------------------------------------------
       begin Scroll Down Button
 * ------------------------------------------------------------------------- */
-const scrollButton = () => {
+(function scrollButton () {
     'use strict';
+    console.log("scrolling")
 
     const btnScrollDown = document.querySelector('#scroll_down');
 
     function scrollDown() {
-        const windowCoords = document.documentElement.clientHeight -document.documentElement.clientHeight / 3;
+        const windowCoords = document.documentElement.clientHeight - document.documentElement.clientHeight / 3;
         (function scroll() {
             if (window.pageYOffset < windowCoords) {
                 window.scrollBy(0, 10);
@@ -21,7 +22,7 @@ const scrollButton = () => {
     if (btnScrollDown) {
         btnScrollDown.addEventListener('click', scrollDown);
     }
-};
+})();
 /* -------------------------------------------------------------------------
       end Scroll Down Button
 * ------------------------------------------------------------------------- */

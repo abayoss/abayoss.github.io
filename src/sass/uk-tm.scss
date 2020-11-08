@@ -22,8 +22,11 @@
     border-radius: 500px;
     min-width: 140px;
 }
-.uk-list, li {
+/* .uk-list, li {
     color: orange;
+} */
+.uk-list, li {
+    color: #448388;
 }
 .uk-button-default-warning {
     background-color: black;
@@ -33,4 +36,13 @@
 .uk-button-default-warning:hover {
     color: white;
     background-color: #FF8800;
+}
+.uk-button-default-info {
+    background-color: black;
+    color: white;
+    border: 2px solid #448388;
+}
+.uk-button-default-info:hover {
+    color: white;
+    background-color: #448388;
 }
