@@ -10,13 +10,12 @@ module.exports = {
         filename: 'app.js',
         path: path.resolve(__dirname, 'docs'),
     },
-    // devServer: {
-    //   port: 8080,
-    //   contentBase: path.resolve(__dirname, 'dist'),
+    devServer: {
+      port: 8080,
+      contentBase: path.resolve(__dirname, 'docs'),
     //   hot: true
-    // }
+    },
     plugins: [
-        new HtmlWebpackPlugin({ template: "src/index.html" }),
         new MiniCssExtractPlugin({ filename: 'assets/css/[name].css', }),
         new CopyPlugin({
             patterns: [
@@ -26,6 +25,7 @@ module.exports = {
                 //         { from: 'src/data', to: 'assets/assets/data' },
             ],
         }),
+        new HtmlWebpackPlugin({ template: "src/index.html" }),
         new CleanWebpackPlugin(),
     ],
     module: {

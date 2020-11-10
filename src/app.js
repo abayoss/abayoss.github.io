@@ -12,6 +12,8 @@ var ready = (callback) => {
 };
 
 ready(() => {
+    SmoothScroll({ stepSize: 60, animationTime : 1500 });
+
     new Vue({
         el: '#work',
         data: {
