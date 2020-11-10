@@ -1,6 +1,8 @@
 section {
     background: #101010;
-
+    & > div {
+        overflow: hidden;
+    }
     &#intro {
         min-height: 120vh;
         overflow: hidden;

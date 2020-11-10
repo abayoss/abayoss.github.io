@@ -23,14 +23,30 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
-    <!-- Main css -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-    <!-- links end -->
 </head>
 
 <body class="reveal" style="visibility: hidden;">
     <!-- layout/navbar start -->
-    <div w3-include-html="layout/nav.html"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand ml-4" href="#">
+            <img src="img/svg/ab_Logo_white.svg" width="30" height="30" alt="" />
+        </a>
+        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item">
+                    <a class="nav-link uk-button uk-button-text active" href="#work">Work</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#contact" style="width: 100%;">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- layout/navbar end -->
 
     <!-- pages/main start -->
@@ -94,8 +110,8 @@
                                         </a>
                                     </p>
                                     <p>
-                                        <a class="uk-button uk-button-default-info" :href="element.source"
-                                            target="#"><i class="fa fa-github"></i> Source
+                                        <a class="uk-button uk-button-default-info" :href="element.source" target="#"><i
+                                                class="fa fa-github"></i> Source
                                         </a>
                                     </p>
                                 </div>
@@ -166,8 +182,105 @@
     <!-- pages/main end -->
 
     <!-- layout/footer start  -->
-    <div w3-include-html="layout/footer.html"></div>
-    <!-- layout/footer start  -->
+    <section id="contact" class="pt-4 animated reveal">
+        <div class="container">
+            <div class="row pt-5">
+                <!-- personal info  -->
+                <div class="col-md-4">
+                    <div class="pb-2 mb-3">
+                        <img src="https://avatars0.githubusercontent.com/u/26075149?s=460&v=4"
+                            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                            alt="" />
+                    </div>
+                    <div class="mb-auto pb-2 mb-3">
+                        <div class="uk-text-center text-white">
+                            <p>🔥 Got a new idea ? Let's make it happen ! 🔥</p>
+                        </div>
+                        <h4>
+                            <i class="fa fa-at" aria-hidden="true"></i> Email
+                        </h4>
+                        <p>abaayous.oussama@gmail.com</p>
+                        <h4>
+                            <i class="fa fa-map" aria-hidden="true"></i> Address
+                        </h4>
+                        <p>
+                            Morocco, Rabat
+                        </p>
+                        <!-- <p>
+                            <a
+                                class="uk-button uk-button-default btn-block text-white"
+                                href="https://docs.google.com/document/d/1m6yDTt4siwRSnCA-vjilGqYO72vHRz3uqFZfw2lchuo"
+                                target="#"
+                            >
+                                <i class="fa fa-file-pdf-o"></i>
+                                Curriculum Vitae
+                            </a>
+                        </p> -->
+                    </div>
+                </div>
+                <!-- contact me -->
+                <div class="col-md-8 mb-4">
+                    <h3>Contact Me</h3>
+                    <!-- Email Form and address -->
+                    <form action="https://formcarry.com/s/v0Z3vC5PTtY" method="post" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="">
+                                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                                Name</label>
+                            <input class="uk-input" type="text" name="name" id="name" aria-describedby="helpId"
+                                placeholder="your name goes here..." required />
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <i class="fa fa-at" aria-hidden="true"></i>
+                                Email</label>
+                            <input class="uk-input" type="text" name="email" id="email" aria-describedby="helpId"
+                                placeholder="your email goes here..." required />
+                        </div>
+                        <div class="form-group">
+                            <label for="messageText">
+                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                Message</label>
+                            <textarea class="uk-textarea" name="message" id="message" rows="4"
+                                placeholder="Message goes here..." required></textarea>
+                        </div>
+                        <button type="submit" name="" id="" class="uk-button uk-button-default-info btn-block">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            Send
+                        </button>
+                    </form>
+                    <!-- social Media  -->
+                    <h5 class="my-2">More Links</h5>
+                    <ul class="uk-list">
+                        <li>
+                            <a href="https://www.github.com/abayoss" target="#"
+                                class="uk-button uk-button-default btn-block text-white">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://linkedin.com/in/oussama-abaayous/" target="#"
+                                class="uk-button uk-button-default btn-block text-white">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a
+                                class="uk-button uk-button-default btn-block text-white"
+                                href="https://docs.google.com/document/d/1m6yDTt4siwRSnCA-vjilGqYO72vHRz3uqFZfw2lchuo"
+                                target="#"
+                            >
+                                <i class="fa fa-file-pdf-o"></i>
+                                Resume
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> <!-- layout/footer End  -->
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -178,7 +291,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script src="docs/app.js"></script>
 </body>
 
 </html>

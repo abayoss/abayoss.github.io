@@ -1,12 +1,10 @@
 const env = 'prod'; // dev | prod
 
 import './sass/index.scss';
-import { includeHTML } from './js/w3htmlInclude';
 import { animateOnscroll } from './js/AnimationOnScroll';
 import './js/ScrollButton';
 import { loadGsapTweens } from './js/tweens';
 
-includeHTML();
 
 var ready = (callback) => {
     if (document.readyState != 'loading') callback();

@@ -37,5 +37,4 @@ const animateOnscroll = () => {
     ScrollReveal().reveal('.slideLeft2', slideLeft2);
     ScrollReveal().reveal('.slideUp', slideUp);
 };
-
 export { animateOnscroll };

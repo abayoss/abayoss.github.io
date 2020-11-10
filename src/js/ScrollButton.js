@@ -3,7 +3,7 @@
 * ------------------------------------------------------------------------- */
 (function scrollButton () {
     'use strict';
-    console.log("scrolling")
+    // console.log("scrolling")
 
     const btnScrollDown = document.querySelector('#scroll_down');
 
