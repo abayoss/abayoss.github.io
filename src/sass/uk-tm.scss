@@ -8,7 +8,7 @@
     transition: all .3s cubic-bezier(.2, .5, .3, 1);
 }
 .uk-overlay-primary {
-    background: rgba(255,255,255,0.75);
+    background: linear-gradient(135deg, #819dfbbd, #8763ddeb);
 }
 .tm-button-default {
     background-color: #fff;
@@ -26,7 +26,7 @@
     color: orange;
 } */
 .uk-list, li {
-    color: #448388;
+    color: #ffffff;
 }
 .uk-button-default-warning {
     background-color: black;
