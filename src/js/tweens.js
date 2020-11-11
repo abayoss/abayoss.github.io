@@ -1,4 +1,4 @@
-function loadGsapTweens() {
+function loadGsapIntroScrollTween() {
     const tl_intro_bg = gsap.timeline({
         scrollTrigger: {
             trigger: '.bg-black-img',
