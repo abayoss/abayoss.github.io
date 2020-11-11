@@ -3,7 +3,7 @@ const env = 'prod'; // dev | prod
 import './sass/index.scss';
 import { animateOnscroll } from './js/AnimationOnScroll';
 import './js/ScrollButton';
-import { loadGsapTweens } from './js/tweens';
+import { loadGsapIntroScrollTween, loadGsapIntroTextTween } from './js/tweens';
 
 
 var ready = (callback) => {
@@ -29,7 +29,10 @@ ready(() => {
                     .then((responseData) => {
                         this.ProjectsList = responseData.projects.slice(0, 6);
                         animateOnscroll();
-                        loadGsapTweens();
+                        loadGsapIntroScrollTween();
+                        setTimeout(() => {
+                            loadGsapIntroTextTween();
+                        }, 1000);
                     });
             },
         },
