@@ -1,5 +1,7 @@
-section {
+body {
     background: #101010;
+}
+section {
     & > .container {
         overflow: hidden;
     }
@@ -49,6 +51,7 @@ section {
             background: url('https://images.unsplash.com/photo-1596634371497-1abd0cfbbd60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1918&q=80');
             object-fit: cover;
             background-size: cover;
+            transform: rotate(5deg);
             filter: brightness(0.5) hue-rotate(1041deg);
         }
         & > .bg-skills-overlay {
@@ -64,8 +67,8 @@ section {
         min-height: 100vh;
     }
 }
-.halfSection {
-    min-height: 50vh;
+.reveal {
+    visibility: hidden;
 }
 .bg-grey {
     background: #f8f8f8;
@@ -79,15 +82,13 @@ section {
 .text-white {
     color: white;
 }
-.negative-color {
-    color: black;
-}
 .btn-info {
     background-color: #7a3f7a;
     border-color: #7a3f7a;
 }
-button.more_work {
+button.more_info {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #3a3a3a;
 }

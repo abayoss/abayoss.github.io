@@ -24,7 +24,7 @@ const animateOnscroll = () => {
         origin: 'bottom',
         delay: 1000,
     };
-    ScrollReveal().reveal('.reveal', { interval: 500, delay: 1000 });
+    ScrollReveal().reveal('.reveal', { interval: 800, delay: 1000 });
     ScrollReveal({
         mobile: false,
         opacity: 0,

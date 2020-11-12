@@ -21,12 +21,10 @@ module.exports = {
             patterns: [
                 { from: 'src/img', to: 'assets/img' },
                 { from: 'src/data', to: 'assets/data' },
-                //         { from: 'src/img', to: 'assets/assets/img' },
-                //         { from: 'src/data', to: 'assets/assets/data' },
             ],
         }),
         new HtmlWebpackPlugin({ template: "src/index.html" }),
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
     ],
     module: {
         rules: [
