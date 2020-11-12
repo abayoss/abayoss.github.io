@@ -36,9 +36,13 @@ function loadGsapIntroScrollTween() {
     // tl2.to('.img-paralax', { y: 60 });
 }
 function loadGsapIntroTextTween() {
-    // var tl_char = gsap.timeline();
-    // var SplitText1 = new SplitText("#quote1", { type: "words,chars" });
-    // var SplitText2 = new SplitText("#quote2", { type: "words,chars" });
+    // var tl_char = gsap.timeline(),
+    //     mySplitText = new SplitText("#quote", { type: "words,chars" }),
+    //     chars = mySplitText.chars; //an array of all the divs that wrap each character
+    // console.log(chars);
+    // gsap.set("#quote", { perspective: 400 });
+
+    // tl_char.staggerFrom(chars, 0.2, {opacity:0, y:50, ease: 'power4'}, 0.09);
 
     // gsap.set("#quote1", { perspective: 400 });
     // gsap.set("#quote2", { perspective: 400 });
