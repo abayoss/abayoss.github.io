@@ -1,4 +1,5 @@
 function loadGsapIntroScrollTween() {
+    const isMobile = window.innerWidth < 737;
     const tl_intro_bg = gsap.timeline({
         scrollTrigger: {
             trigger: '.bg-black-img',
@@ -21,7 +22,23 @@ function loadGsapIntroScrollTween() {
             id: 'skills_img',
         },
     });
-    tl_skill_bg.to('.bg-skills-img', { scale: window.innerWidth < 737 ? 2 : 1.03, y: 220, transformOrigin: '50% 50%', rotation: 0 });
+    tl_skill_bg.to('.bg-skills-img', { scale: isMobile ? 2 : 1.03, y: 220, transformOrigin: '50% 50%', rotation: 0, opacity: 1 });
+
+    const tl_contact = gsap.timeline({
+        scrollTrigger: {
+            trigger: '#contact',
+            start: 'top bottom',
+            end: 'bottom 98%',
+            scrub: true,
+            // markers: true,
+            id: 'contact',
+        },
+    });
+    tl_contact.to('.bg-contact-img', { right: "-20%" }, 0)
+        .to('.bg-contact-elipse1', { top: "10%", right: "14%" }, 0)
+        .to('.bg-contact-elipse2', { top: "50%", right: "89%" }, 0)
+        .from('.row-contact-gsap', { y: 500, ease: "power1.in" }, 0);
+
 
     // const tl2 = gsap.timeline({
     //     scrollTrigger: {
@@ -35,19 +52,5 @@ function loadGsapIntroScrollTween() {
     // });
     // tl2.to('.img-paralax', { y: 60 });
 }
-function loadGsapIntroTextTween() {
-    // var tl_char = gsap.timeline(),
-    //     mySplitText = new SplitText("#quote", { type: "words,chars" }),
-    //     chars = mySplitText.chars; //an array of all the divs that wrap each character
-    // console.log(chars);
-    // gsap.set("#quote", { perspective: 400 });
 
-    // tl_char.staggerFrom(chars, 0.2, {opacity:0, y:50, ease: 'power4'}, 0.09);
-
-    // gsap.set("#quote1", { perspective: 400 });
-    // gsap.set("#quote2", { perspective: 400 });
-    // tl_char.staggerFrom(SplitText1.chars, 0.2, { opacity: 0, y: 50, ease: 'power4' }, 0.039)
-    //     .staggerFrom(SplitText2.chars, 0.2, { opacity: 0, y: 50, ease: 'power4' }, 0.039);
-}
-
-export { loadGsapIntroScrollTween, loadGsapIntroTextTween };
+export { loadGsapIntroScrollTween };

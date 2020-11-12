@@ -8,16 +8,23 @@
         bottom: 60px;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .animated {
         visibility: visible !important;
     }
 }
+
 @media only screen and ( min-height: 800px) {
     .negative-margin {
         margin-top: -500px;
     }
-    .negative-color {
-        color: white;
-    }
+    // section {
+        // &#skills>.container {
+        //     min-height: 50vh
+        // }
+        // &#contact>.container {
+        //     min-height: 80vh;
+        // }
+    // }
 }

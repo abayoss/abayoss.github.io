@@ -30,7 +30,7 @@
     <!-- layout/navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand ml-4" href="#">
-            <img src="img/svg/ab_Logo_white.svg" width="30" height="30" alt="" />
+            <img src="img/logos/white.svg" width="30" height="30" alt="" />
         </a>
         <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,22 +120,22 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="more_info animated slideUp uk-button">
+                <!-- <button type="button" class="more_info animated slideUp uk-button">
                     more...
-                </button>
+                </button> -->
             </div>
         </section>
 
 
         <!-- skill Section  -->
-        <section class="animated slideRight1 py-5" id="skill">
+        <section class="animated slideRight1" id="skill">
             <div class="bg-skills-img"></div>
             <div class="bg-skills-overlay"></div>
-            <div class="container">
+            <div class="container py-3">
                 <div class="row animated slideLeft2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 align-self-center">
                         <h4>Tech i'm working with</h4>
-                        <ul class="uk-list uk-list-divider">
+                        <ul class="uk-list">
                             <li></li>
                             <li>Vue Js</li>
                             <li>Node & Express JS</li>
@@ -145,9 +145,9 @@
                             <li></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 border-left2">
+                    <div class="col-md-4 border-left2 align-self-center">
                         <h4>Tech i'm familiar with</h4>
-                        <ul class="uk-list uk-list-divider">
+                        <ul class="uk-list">
                             <li></li>
                             <li>Sass, Less</li>
                             <li>Reactive Extensions</li>
@@ -158,43 +158,26 @@
                         </ul>
                     </div>
                     <div>
-                        <button type="button" class="more_info animated slideUp uk-button">
+                        <!-- <button type="button" class="more_info animated slideUp uk-button">
                             more...
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="section-paralax" class="pt-5">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div style="overflow: hidden;" class="img-paralax-col">
-                            <img class="img-paralax"
-                                style="transform: scale(1.3);width: 300px; object-fit: cover; transform-origin: 50% 50%; height: 100%;"
-                                src="https://viragesmoto.com/wp-content/uploads/ViragesMoto72sur111-1000x1500.jpg">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Une expérience inoubliable </h4>
-                        <p>Des itinéraires testés et approuvés par nos soins à travers les plus belles routes de France
-                            et d’Espagne, le meilleur de la gastronomie locale, une ambiance amicale et une attention
-                            particulière à toutes vos demandes. Let’s ride! </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
     </main>
     <!-- pages/main end -->
 
     <!-- layout/footer start  -->
-    <section id="contact" class="pt-4 reveal">
+    <section id="contact" class="reveal">
+        <div class="bg-contact-img"></div>
+        <div class="bg-contact-elipse1"></div>
+        <div class="bg-contact-elipse2"></div>
         <div class="container">
-            <div class="row pt-5">
+            <div class="row row-contact-gsap">
                 <!-- personal info  -->
-                <div class="col-md-4">
+                <div class="col-md-4 align-self-center">
                     <div class="pb-2 mb-3">
                         <img src="https://avatars0.githubusercontent.com/u/26075149?s=460&v=4"
                             class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
@@ -205,55 +188,48 @@
                             <p>🔥 Got a new idea ? Let's make it happen ! 🔥</p>
                         </div>
                         <h4>
-                            <i class="fa fa-at" aria-hidden="true"></i> Email
+                            <i class="fa fa-at"></i> Email
                         </h4>
                         <p>abaayous.oussama@gmail.com</p>
                         <h4>
-                            <i class="fa fa-map" aria-hidden="true"></i> Address
+                            <i class="fa fa-map"></i> Address
                         </h4>
                         <p>
                             Morocco, Rabat
                         </p>
-                        <!-- <p>
-                            <a
-                                class="uk-button uk-button-default btn-block text-white"
-                                href="https://docs.google.com/document/d/1m6yDTt4siwRSnCA-vjilGqYO72vHRz3uqFZfw2lchuo"
-                                target="#"
-                            >
-                                <i class="fa fa-file-pdf-o"></i>
-                                Curriculum Vitae
-                            </a>
-                        </p> -->
                     </div>
                 </div>
                 <!-- contact me -->
-                <div class="col-md-8 mb-4">
+                <div class="col-md-8 align-self-center">
                     <h3>Contact Me</h3>
                     <!-- Email Form and address -->
                     <form action="https://formcarry.com/s/v0Z3vC5PTtY" method="post" accept-charset="UTF-8">
                         <div class="form-group">
                             <label for="">
-                                <i class="fa fa-bullseye" aria-hidden="true"></i>
-                                Name</label>
-                            <input class="uk-input" type="text" name="name" id="name" aria-describedby="helpId"
+                                <i class="fa fa-bullseye"></i>
+                                Name
+                            </label>
+                            <input class="uk-input" type="text" name="name" id="name"
                                 placeholder="your name goes here..." required />
                         </div>
                         <div class="form-group">
                             <label for="">
-                                <i class="fa fa-at" aria-hidden="true"></i>
-                                Email</label>
-                            <input class="uk-input" type="text" name="email" id="email" aria-describedby="helpId"
+                                <i class="fa fa-at"></i>
+                                Email
+                            </label>
+                            <input class="uk-input" type="text" name="email" id="email"
                                 placeholder="your email goes here..." required />
                         </div>
                         <div class="form-group">
                             <label for="messageText">
-                                <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                                Message</label>
+                                <i class="fa fa-envelope-open"></i>
+                                Message
+                            </label>
                             <textarea class="uk-textarea" name="message" id="message" rows="4"
                                 placeholder="Message goes here..." required></textarea>
                         </div>
                         <button type="submit" name="" id="" class="uk-button uk-button-default-info btn-block">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <i class="fa fa-paper-plane"></i>
                             Send
                         </button>
                     </form>
@@ -263,27 +239,17 @@
                         <li>
                             <a href="https://www.github.com/abayoss" target="#"
                                 class="uk-button uk-button-default btn-block text-white">
-                                <i class="fa fa-github" aria-hidden="true"></i>
+                                <i class="fa fa-github"></i>
                                 Github
                             </a>
                         </li>
                         <li>
                             <a href="http://linkedin.com/in/oussama-abaayous/" target="#"
                                 class="uk-button uk-button-default btn-block text-white">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin"></i>
                                 Linkedin
                             </a>
                         </li>
-                        <!-- <li>
-                            <a
-                                class="uk-button uk-button-default btn-block text-white"
-                                href="https://docs.google.com/document/d/1m6yDTt4siwRSnCA-vjilGqYO72vHRz3uqFZfw2lchuo"
-                                target="#"
-                            >
-                                <i class="fa fa-file-pdf-o"></i>
-                                Resume
-                            </a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -292,7 +258,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

@@ -1,9 +1,9 @@
 const env = 'prod'; // dev | prod
 
 import './sass/index.scss';
-import { animateOnscroll } from './js/AnimationOnScroll';
-import './js/ScrollButton';
-import { loadGsapIntroScrollTween, loadGsapIntroTextTween } from './js/tweens';
+import { animateOnscroll } from './js/pages/home/AnimationOnScroll';
+// import './js/ScrollButton';
+import { loadGsapIntroScrollTween } from './js/pages/home/tweens';
 
 
 var ready = (callback) => {
@@ -12,7 +12,7 @@ var ready = (callback) => {
 };
 
 ready(() => {
-    SmoothScroll({ stepSize: 60, animationTime : 1500 });
+    SmoothScroll({ stepSize: 60, animationTime: 1500 });
 
     new Vue({
         el: '#work',
@@ -30,9 +30,6 @@ ready(() => {
                         this.ProjectsList = responseData.projects.slice(0, 6);
                         animateOnscroll();
                         loadGsapIntroScrollTween();
-                        setTimeout(() => {
-                            loadGsapIntroTextTween();
-                        }, 1000);
                     });
             },
         },

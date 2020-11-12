@@ -24,12 +24,12 @@ const animateOnscroll = () => {
         origin: 'bottom',
         delay: 1000,
     };
-    ScrollReveal().reveal('.reveal', { interval: 800, delay: 1000 });
+    ScrollReveal().reveal('.reveal', { interval: 400, delay: 400 });
     ScrollReveal({
         mobile: false,
         opacity: 0,
-        distance: '20%',
-        duration: 2000,
+        distance: '40%',
+        duration: 1600,
     });
     ScrollReveal().reveal('.slideRight1', slideRight1);
     ScrollReveal().reveal('.slideRight2', slideRight2);

@@ -19,12 +19,13 @@ module.exports = {
         new MiniCssExtractPlugin({ filename: 'assets/css/[name].css', }),
         new CopyPlugin({
             patterns: [
-                { from: 'src/img', to: 'assets/img' },
+                { from: 'src/img/favicon_package_v0.16', to: 'assets/img/favicon_package_v0.16/' },
+                // { from: 'src/img/svg', to: 'assets/img/svg/' },
                 { from: 'src/data', to: 'assets/data' },
             ],
         }),
         new HtmlWebpackPlugin({ template: "src/index.html" }),
-        // new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
     ],
     module: {
         rules: [
@@ -46,7 +47,7 @@ module.exports = {
                 exclude: /(node_modules)/,
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
+                test: /\.(png|svg|jpg|jpeg|gif|tiff|webp)$/,
                 loader: 'file-loader',
                 options: {
                     name: 'assets/img/[name].[ext]',
