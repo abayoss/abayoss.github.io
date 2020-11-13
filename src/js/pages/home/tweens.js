@@ -28,16 +28,15 @@ function loadGsapIntroScrollTween() {
         scrollTrigger: {
             trigger: '#contact',
             start: 'top bottom',
-            end: 'bottom 98%',
+            end: 'bottom bottom',
             scrub: true,
             // markers: true,
             id: 'contact',
         },
     });
-    tl_contact.to('.bg-contact-img', { right: "-20%" }, 0)
-        .to('.bg-contact-elipse1', { top: "10%", right: "14%" }, 0)
-        .to('.bg-contact-elipse2', { top: "50%", right: "89%" }, 0)
-        .from('.row-contact-gsap', { y: 500, ease: "power1.in" }, 0);
+    tl_contact
+        .from('.bg-contact-img', { scale: 1.2, y: -160, transformOrigin: '50% 50%'}, 0)
+        .from('.row-contact-gsap', { y: 500 }, 0);
 
 
     // const tl2 = gsap.timeline({

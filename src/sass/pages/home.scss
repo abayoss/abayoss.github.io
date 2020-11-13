@@ -77,30 +77,11 @@ section {
             position: absolute;
             width: 100%;
             top: 0;
-            right: -60%;
-            background-image: url("../img/pages/home/contact_bg.png");
+            right: 0%;
+            // right: -60%;
+            background-image: url("../img/pages/home/canvas_maserati.jpg");
             object-fit: cover;
             background-size: cover;
-        }
-        & > .bg-contact-elipse1 {
-            filter: blur(10px);
-            position: absolute;
-            height: 100px;
-            width: 100px;
-            top: 40%;
-            right: 10%;
-            background-image: url("../img/pages/home/contact_elipse1.png");
-            background-repeat: no-repeat;
-        }
-        & > .bg-contact-elipse2 {
-            filter: blur(10px);
-            position: absolute;
-            height: 100px;
-            width: 100px;
-            top: 60%;
-            right: 80%;
-            background-image: url("../img/pages/home/contact_elipse2.png");
-            background-repeat: no-repeat;
         }
     }
 }
