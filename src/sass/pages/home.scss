@@ -46,7 +46,7 @@ section {
             height: 100vh;
             bottom: 0;
             left: 0;
-            background: url('../img/pages/home/silicon.webp');
+            background: url('../img/pages/home/bg-intro2.jpg');
             object-fit: cover;
             background-size: cover;
             transform: rotate(5deg);
@@ -58,7 +58,7 @@ section {
             height: 100%;
             left: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgb(11 8 37 / 38%) 0%, #131c8685 70%);
+            background: linear-gradient(135deg, rgb(11 8 37 / 14%) 0%, #131d8633 70%);
         }
     }
     &#contact {
@@ -67,6 +67,9 @@ section {
         min-height: 100vh;
         & > .container > .row {
             min-height: 100vh;
+            & > div > div > img {
+                border-radius: 4px;
+            }
         }
         & > .bg-contact-img {
             filter: blur(10px);
