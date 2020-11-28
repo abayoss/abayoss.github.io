@@ -11,20 +11,26 @@ module.exports = {
         path: path.resolve(__dirname, 'docs'),
     },
     devServer: {
-      port: 8080,
-      contentBase: path.resolve(__dirname, 'docs'),
-    //   hot: true
+        port: 8080,
+        contentBase: path.resolve(__dirname, 'docs'),
+        //   hot: true
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'assets/css/[name].css', }),
+        new MiniCssExtractPlugin({ filename: 'assets/css/[name].css' }),
         new CopyPlugin({
             patterns: [
-                { from: 'src/img/favicon_package_v0.16', to: 'assets/img/favicon_package_v0.16/' },
+                {
+                    from: 'src/img/favicon_package_v0.16',
+                    to: 'assets/img/favicon_package_v0.16/',
+                },
                 // { from: 'src/img/svg', to: 'assets/img/svg/' },
                 { from: 'src/data', to: 'assets/data' },
             ],
         }),
-        new HtmlWebpackPlugin({ template: "src/index.html" }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/index.html',
+        }),
         new CleanWebpackPlugin(),
     ],
     module: {
@@ -39,21 +45,29 @@ module.exports = {
             },
             {
                 test: /\.html$/i,
-                use: ['html-loader']
+                use: ['html-loader'],
             },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /(node_modules)/,
             },
+            // {
+            //     test: /\.html$/i,
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: '[name].[ext]',
+            //     },
+            //     exclude: path.resolve(__dirname, 'src/index.html')
+            // },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|tiff|webp)$/,
                 loader: 'file-loader',
                 options: {
                     name: 'assets/img/[name].[ext]',
-                    publicPath: '/'
-                }
-            }
+                    publicPath: '/',
+                },
+            },
         ],
     },
 };
