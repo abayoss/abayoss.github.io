@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- icons / theme color -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_package_v0.16/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_package_v0.16/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_package_v0.16/favicon-16x16.png" />
-    <link rel="manifest" href="assets/img/favicon_package_v0.16//site.webmanifest" />
-    <link rel="mask-icon" href="assets/img/favicon_package_v0.16//safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#9f00a7" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png" />
 
     <title>Mr.abayoss</title>
 
@@ -23,6 +18,7 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/index.scss">
     <!-- links End -->
 </head>
 
@@ -79,11 +75,11 @@
 
         <!-- Work Section  -->
         <section class="pb-5" id="work">
-            <div class="container negative-margin">
+            <div class="container negative-margin mb-5">
                 <h4>Work</h4>
                 <!-- dynamic Work Section  -->
                 <div class="row top_work_grid mb-5 animated slideLeft2">
-                    <div class="col-md-4 mx-auto py-2 " v-for="element in ProjectsList">
+                    <div class="col-md-4 mx-auto py-2 mb-5" v-for="element in ProjectsList">
                         <div>
                             <div class="uk-inline tm-image-card uk-transition-toggle" tabindex="0">
                                 <div>
@@ -262,6 +258,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 

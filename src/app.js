@@ -1,10 +1,10 @@
-const env = 'prod'; // dev | prod
-
-import './sass/index.scss';
+// import './sass/index.scss';
+import projects from './data/prod/projects.json';
 import { animateOnscroll } from './js/pages/home/AnimationOnScroll';
 // import './js/ScrollButton';
 import { loadGsapIntroScrollTween } from './js/pages/home/tweens';
 
+console.log(projects);
 
 var ready = (callback) => {
     if (document.readyState != 'loading') callback();
@@ -24,13 +24,14 @@ ready(() => {
         },
         methods: {
             getProjects: function () {
-                fetch('assets/data/' + env + '/projects.json?' + Math.random())
-                    .then((res) => res.json())
-                    .then((responseData) => {
-                        this.ProjectsList = responseData.projects.slice(0, 6);
+                // fetch('assets/data/' + env + '/projects.json?' + Math.random())
+                //     .then((res) => res.json())
+                //     .then((responseData) => {
+                        // this.ProjectsList = responseData.projects.slice(0, 6);
+                        this.ProjectsList = projects.projects.slice(0, 6);
                         animateOnscroll();
                         loadGsapIntroScrollTween();
-                    });
+                    // });
             },
         },
     });
