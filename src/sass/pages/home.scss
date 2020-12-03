@@ -40,16 +40,14 @@ section {
             min-height: 50vh;
         }
         &>.bg-skills-img {
-            opacity: 0;
             position: absolute;
             width: 100%;
-            height: 100vh;
-            bottom: 0;
+            height: 100%;
+            top: 0;
             left: 0;
             background: url('../img/pages/home/bg-intro2.jpg');
-            object-fit: cover;
+            transform-origin: 50% 50%;
             background-size: cover;
-            transform: rotate(5deg);
             filter: brightness(0.5) hue-rotate(1041deg);
         }
         &>.bg-skills-overlay {

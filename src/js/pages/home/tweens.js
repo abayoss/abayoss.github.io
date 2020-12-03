@@ -22,7 +22,7 @@ function loadGsapIntroScrollTween() {
             id: 'skills_img',
         },
     });
-    tl_skill_bg.to('.bg-skills-img', { scale: isMobile ? 2 : 1.03, y: 220, transformOrigin: '50% 50%', rotation: 0, opacity: 1 });
+    tl_skill_bg.from('.bg-skills-img', { scale: 1.2, transformOrigin: '50% 50%' });
 
     const tl_contact = gsap.timeline({
         scrollTrigger: {
