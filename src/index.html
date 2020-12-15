@@ -24,10 +24,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2W37KZNYN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-R2W37KZNYN');
+
     </script>
 </head>
 
@@ -48,7 +52,7 @@
                     <a class="nav-link uk-button uk-button-text active" href="#work">Work</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link active" href="#contact" style="width: 100%;">Contact Me</a>
+                    <a class="nav-link uk-button uk-button-text active" href="#contact" style="width: 100%;">Contact Me</a>
                 </li>
             </ul>
         </div>
@@ -87,7 +91,7 @@
             <div class="container negative-margin mb-5">
                 <h4>Work</h4>
                 <!-- dynamic Work Section  -->
-                <div class="row top_work_grid mb-5 animated slideLeft2">
+                <div class="row mb-5 animated slideLeft2">
                     <div class="col-md-4 mx-auto py-2 mb-5" v-for="element in ProjectsList">
                         <div>
                             <div class="uk-inline tm-image-card uk-transition-toggle" tabindex="0">
@@ -98,9 +102,7 @@
                                         </div>
                                         <div class="uk-card-body">
                                             <h3 class="uk-card-title">{{element.title}}</h3>
-                                            <p>
-                                                {{element.description}}
-                                            </p>
+                                            <p> {{element.description}} </p>
                                         </div>
                                         <div class="uk-position-cover uk-overlay uk-overlay-primary uk-transition-fade">
                                         </div>
@@ -108,16 +110,18 @@
                                 </div>
                                 <div class="uk-panel uk-position-center uk-text-center uk-transition-fade">
                                     <p v-if="element.live">
-                                        <a class="uk-button btn-info" :href="element.live" target="#">Live Demo
+                                        <a class="uk-button btn-info" :href="element.live" target="#">
+                                            Live Demo
                                         </a>
                                     </p>
                                     <p>
-                                        <a class="uk-button btn-secondary" :href="element.details" target="#">Details
+                                        <a class="uk-button btn-secondary" :href="element.details" target="#">
+                                            Details
                                         </a>
                                     </p>
                                     <p>
-                                        <a class="uk-button uk-button-default-info" :href="element.source" target="#"><i
-                                                class="fa fa-github"></i> Source
+                                        <a class="uk-button uk-button-default-info" :href="element.source" target="#">
+                                            <i class="fa fa-github"></i> Source
                                         </a>
                                     </p>
                                 </div>
@@ -208,24 +212,21 @@
                     <!-- Email Form and address -->
                     <form action="https://formcarry.com/s/v0Z3vC5PTtY" method="post" accept-charset="UTF-8">
                         <div class="form-group">
-                            <label for="">
-                                <i class="fa fa-bullseye"></i>
+                            <label for="name">
                                 Name
                             </label>
                             <input class="uk-input" type="text" name="name" id="name"
                                 placeholder="your name goes here..." required />
                         </div>
                         <div class="form-group">
-                            <label for="">
-                                <i class="fa fa-at"></i>
+                            <label for="email">
                                 Email
                             </label>
                             <input class="uk-input" type="text" name="email" id="email"
                                 placeholder="your email goes here..." required />
                         </div>
                         <div class="form-group">
-                            <label for="messageText">
-                                <i class="fa fa-envelope-open"></i>
+                            <label for="message">
                                 Message
                             </label>
                             <textarea class="uk-textarea" name="message" id="message" rows="4"
@@ -236,24 +237,21 @@
                             Send
                         </button>
                     </form>
+
                     <!-- social Media  -->
-                    <h5 class="my-2">More Links</h5>
-                    <ul class="uk-list">
-                        <li>
-                            <a href="https://www.github.com/abayoss" target="#"
-                                class="uk-button uk-button-default btn-block text-white">
-                                <i class="fa fa-github"></i>
-                                Github
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://linkedin.com/in/oussama-abaayous/" target="#"
-                                class="uk-button uk-button-default btn-block text-white">
-                                <i class="fa fa-linkedin"></i>
-                                Linkedin
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="mt-5 d-flex">
+                        <a href="https://www.github.com/abayoss" target="#"
+                            class="uk-button uk-button-default text-white mr-4">
+                            <i class="fa fa-github"></i>
+                            Github
+                        </a>
+
+                        <a href="http://linkedin.com/in/oussama-abaayous/" target="#"
+                            class="uk-button uk-button-default text-white">
+                            <i class="fa fa-linkedin"></i>
+                            Linkedin
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -264,9 +262,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
     <script src="app.js"></script>
 
 </body>

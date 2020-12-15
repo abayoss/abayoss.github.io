@@ -1,55 +1,75 @@
-
 .tm-image-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 30px 65px rgba(0,0,0,0.12);
+    box-shadow: 0 30px 65px rgba(0, 0, 0, 0.12);
 }
+
 .tm-image-card {
-    box-shadow: 3px 5px 30px 0 rgba(0,0,0,0.15);
+    box-shadow: 3px 5px 30px 0 rgba(0, 0, 0, 0.15);
     transition: all .3s cubic-bezier(.2, .5, .3, 1);
 }
+
 .uk-overlay-primary {
     background: linear-gradient(135deg, #819dfbbd, #8763ddeb);
 }
+
 .tm-button-default {
     background-color: #fff;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.041);
     color: #555;
 }
+
 .tm-button-default:not(.uk-button-small) {
     min-width: 140px;
 }
-.uk-button{
+
+.uk-button {
     border-radius: 500px;
     min-width: 140px;
 }
+
+
 /* .uk-list, li {
     color: orange;
 } */
-.uk-list, li {
+
+.uk-list,
+li {
     color: #ffffff;
 }
+
 .uk-button-default-warning {
     background-color: black;
     color: white;
     border: 2px solid #FF8800;
 }
+
 .uk-button-default-warning:hover {
     color: white;
     background-color: #FF8800;
 }
+
 .uk-button-default-info {
     background-color: black;
     color: white;
     border: 2px solid #448388;
 }
+
 .uk-button-default-info:hover {
     color: white;
     background-color: #448388;
 }
+
 .uk-card-default {
     overflow: hidden;
     border-radius: 4px;
 }
-.uk-input, .uk-select, .uk-textarea {
+
+.uk-input,
+.uk-select,
+.uk-textarea {
     border-radius: 4px;
+}
+
+.uk-button-text::before {
+    border-bottom: 1px solid rgb(195, 195, 195);
 }

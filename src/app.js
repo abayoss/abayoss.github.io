@@ -1,5 +1,5 @@
 // import './sass/index.scss';
-import projects from './data/prod/projects.json';
+import projects from './js/data/projects.json';
 import { animateOnscroll } from './js/pages/home/AnimationOnScroll';
 // import './js/ScrollButton';
 import { loadGsapIntroScrollTween } from './js/pages/home/tweens';
