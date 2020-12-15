@@ -3,6 +3,7 @@
 
 # Files 
 versions/*
+dev
 package.json
 package-lock.json
 ### Node ###
