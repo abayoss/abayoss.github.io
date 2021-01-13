@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v2';
-const dynamicCacheName = 'dynamic-cache-v1';
+const staticCacheName = 'site-static-v3';
+const dynamicCacheName = 'dynamic-cache-v3';
 const assets = [
     '/',
     '/index.html',
@@ -15,7 +15,7 @@ const assets = [
 ];
 
 // install event
-self.addEventListener('install', evt => {
+self.addEventListener('install', (evt) => {
     //console.log('service worker installed');
     evt.waitUntil(
         caches.open(staticCacheName).then((cache) => {
@@ -26,31 +26,39 @@ self.addEventListener('install', evt => {
 });
 
 // activate event
-self.addEventListener('activate', evt => {
+self.addEventListener('activate', (evt) => {
     //console.log('service worker activated');
     evt.waitUntil(
-        caches.keys().then(keys => {
+        caches.keys().then((keys) => {
             //console.log(keys);
-            return Promise.all(keys
-                .filter(key => key !== staticCacheName)
-                .map(key => caches.delete(key))
+            return Promise.all(
+                keys
+                    .filter((key) => key !== staticCacheName)
+                    .map((key) => caches.delete(key))
             );
         })
     );
 });
 
-
 // fetch event
-self.addEventListener('fetch', evt => {
+self.addEventListener('fetch', (evt) => {
     //console.log('fetch event', evt);
     evt.respondWith(
-        caches.match(evt.request).then(cacheRes => {
-            return cacheRes || fetch(evt.request).then(fetchRes => {
-                return caches.open(dynamicCacheName).then(cache => {
-                    cache.put(evt.request.url, fetchRes.clone());
-                    return fetchRes;
-                })
-            });
-        }).catch(() => caches.match('/pages/fallback.html'))
+        caches
+            .match(evt.request)
+            .then((cacheRes) => {
+                return (
+                    cacheRes ||
+                    fetch(evt.request).then((fetchRes) => {
+                        return caches.open(dynamicCacheName).then((cache) => {
+                            if (evt.request.url.indexOf('http') === 0) {
+                                cache.put(evt.request.url, fetchRes.clone());
+                            }
+                            return fetchRes;
+                        });
+                    })
+                );
+            })
+            .catch(() => caches.match('/pages/fallback.html'))
     );
 });

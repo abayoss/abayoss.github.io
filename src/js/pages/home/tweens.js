@@ -12,31 +12,31 @@ function loadGsapIntroScrollTween() {
     });
     tl_intro_bg.to('.bg-black-img', { scale: 1.1, y: 160, transformOrigin: '50% 50%' });
 
-    const tl_skill_bg = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#skill',
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: true,
-            // markers: true,
-            id: 'skills_img',
-        },
-    });
-    tl_skill_bg.from('.bg-skills-img', { scale: 1.2, transformOrigin: '50% 50%' });
+    // const tl_skill_bg = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: '#skill',
+    //         start: 'top bottom',
+    //         end: 'bottom top',
+    //         scrub: true,
+    //         // markers: true,
+    //         id: 'skills_img',
+    //     },
+    // });
+    // tl_skill_bg.from('.bg-skills-img', { scale: 1.2, transformOrigin: '50% 50%' });
 
-    const tl_contact = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#contact',
-            start: 'top bottom',
-            end: 'bottom bottom',
-            scrub: true,
-            // markers: true,
-            id: 'contact',
-        },
-    });
-    tl_contact
-        .from('.bg-contact-img', { scale: 1.2, y: -160, transformOrigin: '50% 50%'}, 0)
-        .from('.row-contact-gsap', { y: 500 }, 0);
+    // const tl_contact = gsap.timeline({
+    //     scrollTrigger: {
+    //         trigger: '#contact',
+    //         start: 'top bottom',
+    //         end: 'bottom bottom',
+    //         scrub: true,
+    //         // markers: true,
+    //         id: 'contact',
+    //     },
+    // });
+    // tl_contact
+    //     .from('.bg-contact-img', { scale: 1.2, y: -160, transformOrigin: '50% 50%'}, 0)
+    //     .from('.row-contact-gsap', { y: 500 }, 0);
 
 
     // const tl2 = gsap.timeline({
